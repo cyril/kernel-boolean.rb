@@ -9,12 +9,13 @@ Gem::Specification.new do |spec|
   spec.description            = spec.summary
   spec.homepage               = "https://github.com/cyril/kernel-boolean.rb"
   spec.license                = "MIT"
-  spec.files                  = Dir["LICENSE.md", "README.md", "lib/**/*"]
+  spec.files                  = ::Dir["LICENSE.md", "README.md", "lib/**/*"]
   spec.required_ruby_version  = ">= 2.7.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "r_spec-clone"
+  spec.add_development_dependency "r_spec"
+  spec.add_development_dependency "rubocop-gitlab-security"
   spec.add_development_dependency "rubocop-md"
   spec.add_development_dependency "rubocop-performance"
   spec.add_development_dependency "rubocop-rake"

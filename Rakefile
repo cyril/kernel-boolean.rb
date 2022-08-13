@@ -25,6 +25,6 @@ Dir["tasks/**/*.rake"].each { |t| load t }
 
 task default: %i[
   test
-  rubocop:auto_correct
+  rubocop:autocorrect
   yard
 ]
