@@ -7,7 +7,6 @@ Returns a boolean based on the given argument.
 [![Version](https://img.shields.io/github/v/tag/cyril/kernel-boolean.rb?label=Version&logo=github)](https://github.com/cyril/kernel-boolean.rb/tags)
 [![Yard documentation](https://img.shields.io/badge/Yard-documentation-blue.svg?logo=github)](https://rubydoc.info/github/cyril/kernel-boolean.rb/main)
 [![Ruby](https://github.com/cyril/kernel-boolean.rb/workflows/Ruby/badge.svg?branch=main)](https://github.com/cyril/kernel-boolean.rb/actions?query=workflow%3Aruby+branch%3Amain)
-[![RuboCop](https://github.com/cyril/kernel-boolean.rb/workflows/RuboCop/badge.svg?branch=main)](https://github.com/cyril/kernel-boolean.rb/actions?query=workflow%3Arubocop+branch%3Amain)
 [![License](https://img.shields.io/github/license/cyril/kernel-boolean.rb?label=License&logo=github)](https://github.com/cyril/kernel-boolean.rb/raw/main/LICENSE.md)
 
 ## Installation
