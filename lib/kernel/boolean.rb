@@ -24,10 +24,10 @@ module Kernel
   #   Boolean(nil)    # => TypeError: can't convert nil into boolean
   #   Boolean("true") # => ArgumentError: invalid value for Boolean(): "true"
   def Boolean(arg)
-    return arg if [false, true].include?(arg)
+    return true if true.equal?(arg)
+    return false if false.equal?(arg)
 
     raise ::TypeError, "can't convert nil into boolean" if arg.nil?
-
     raise ::ArgumentError, "invalid value for Boolean(): #{arg.inspect}"
   end
   # rubocop:enable Naming/MethodName

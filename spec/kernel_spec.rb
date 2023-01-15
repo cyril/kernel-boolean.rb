@@ -31,5 +31,65 @@ RSpec.describe Kernel do
 
       it { is_expected.to raise_exception(ArgumentError) }
     end
+
+    context "when a fake true's #object_id is the same as true's" do
+      let(:fake_true) do
+        Class.new do
+          def equal?(_other)
+            true
+          end
+
+          def eql?(_other)
+            true
+          end
+
+          def ===(_other)
+            true
+          end
+
+          def ==(_other)
+            true
+          end
+
+          def object_id
+            true.object_id
+          end
+        end
+      end
+
+      let(:arg) { fake_true.new }
+
+      it { is_expected.to raise_exception(ArgumentError) }
+    end
+
+    context "when a fake false's #object_id is the same as false's" do
+      let(:fake_false) do
+        Class.new do
+          def equal?(_other)
+            true
+          end
+
+          def eql?(_other)
+            true
+          end
+
+          def ===(_other)
+            true
+          end
+
+          def ==(_other)
+            true
+          end
+
+          def object_id
+            false.object_id
+          end
+        end
+      end
+
+      let(:arg) { fake_false.new }
+
+      it { is_expected.to raise_exception(ArgumentError) }
+    end
   end
 end

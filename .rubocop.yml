@@ -19,3 +19,9 @@ Style/StringLiterals:
 
 Style/SymbolArray:
   Enabled: true
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+Style/RedundantConstantBase:
+  Enabled: false
