@@ -67,6 +67,10 @@ The `Kernel` module is included in the `Object` class, so by loading this librar
 
 `Kernel#Boolean` uses [Semantic Versioning 2.0.0](https://semver.org/)
 
+## See also
+
+* [`kernel-symbol`](https://github.com/cyril/kernel-symbol.rb): Returns a `Symbol` based on the given argument.
+
 ## License
 
 The [gem](https://rubygems.org/gems/kernel-boolean) is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
